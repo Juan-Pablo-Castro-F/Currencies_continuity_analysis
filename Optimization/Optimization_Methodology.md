@@ -25,10 +25,12 @@ We run a first optimization with the different variables that we have chosen to 
 
 
 As we can see in the chart with the result of all the optimizations, the best results are consistently found when the Asia range starts at 4:00 a.m. For this reason, we are inclined to believe that this might be the best parameter to run later in the walk forward phase. 
-![Asia range start time ](./img/Asia_range_start_time_chart.png)
+
+![Asia range start time ](https://github.com/Juan-Pablo-Castro-F/Data_analysis_currencies_time/blob/ec4d8440ef044bd1acfcdf55d71cbb494ec6062e/img/Asia_range_start_time_chart.png)
 
 When doing the same analysis with the end of the Asia range, we see quite different results. We can see that most of them are really similar except when the parameter takes the value 8, for this reason we will not consider it for the next test, instead we will use the value 7 and if needed the other ones under. 
-![Asia range end time ](./img/Asia_range_end_time_chart.png)
+
+![Asia range end time ](https://github.com/Juan-Pablo-Castro-F/Data_analysis_currencies_time/blob/ec4d8440ef044bd1acfcdf55d71cbb494ec6062e/img/Asia_range_end_time_chart.png)
 
 If we do the same analysis with the end of the trading time, we will see that all the results are so similar therefore we will be indifferent to this parameter and we will forward test it in the next stage. 
 Regarding the stop loss and the take profit, we need to evaluate these two variables together since they are strictly correlated to each other so we need to know which are the patterns in the combinations of this parameter.
@@ -36,7 +38,8 @@ Regarding the stop loss and the take profit, we need to evaluate these two varia
 
 As we can see the results in the 3D image, we can see that so many combinations give satisfactory results, however our objective is not to find the peaks but to fin the consistent valleys with profit. Due to the nature of the chart is quite hard to do this task however we can see that the most appropriate values for risk to reward are 3 and higher, therefore these will be the ones we will use in the forward test option. 
 Regarding stop loss we can only identify that when it takes the value of 100 it yields the worst results, however it can be a matter of randomness and therefore we won’t exclude it from the next stage and we will prove its validity after. 
-![Stop Loss and Take profit chart ](./img/RR_and_Slpoints_chart.png)
+
+![Stop Loss and Take profit chart ](https://github.com/Juan-Pablo-Castro-F/Data_analysis_currencies_time/blob/ec4d8440ef044bd1acfcdf55d71cbb494ec6062e/img/RR_and_Slpoints_chart.png)
 
 We have analyzed all the variables we wanted to evaluate, now we will proceed to the next stage of the optimization. 
 
@@ -49,12 +52,12 @@ The reason of the implementation of this model is that we are interested in maki
 We will perform our test in the last year price data. We will use the in-sample data from January until end of September, and the out-sample data will be from October to the end of the year. This will give us a total of 9 months in data and 3 months out data to a forward ratio of 1:4. 
 The results given by this method are two data files, first with the in sample run which can be found in the repository under the name Second_stage_optimization and the out-sample part Second_stage_forward. 
 
-![Forward Results ](./img/Final_Forward_results.png)
+![Forward Results ](https://github.com/Juan-Pablo-Castro-F/Data_analysis_currencies_time/blob/ec4d8440ef044bd1acfcdf55d71cbb494ec6062e/img/Final_Forward_results.png)
 
 In the image above we can see the best 10 results from boths of the tests. As we can see in multiple cases the reliability of the model stands and the predictability of the model works. We will chose the first set of parameters since we believe that’s what adjust the best to the parameters conditions and as well it has a low drawdown which is a key in strategy development. 
 We then proceed to run specific test of the model in the whole data set to see more qualities about the system and familiarize better with other metrics which will help us to understand better the system. 
 
-![Final Equity Curve ](./img/Final_equity_curve.png)
+![Final Equity Curve ](https://github.com/Juan-Pablo-Castro-F/Data_analysis_currencies_time/blob/ec4d8440ef044bd1acfcdf55d71cbb494ec6062e/img/Final_equity_curve.png)
 
 The above pictured depicts the simulated equity curve if we would have used our trading strategy in the last year. In this equity curve we can see that along the whole time the price has healthy fluctuations. We can also see that at the end there is some more steep growth which would teel us that this model had a good fitting period from the October until the end of the year. 
 
