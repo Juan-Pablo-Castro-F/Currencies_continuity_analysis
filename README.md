@@ -38,10 +38,10 @@ Investing in the financial markets is one of the oldest ways of profiting from p
 - Quant Data analyzer. 
 
 ## Setup
-You can find the finished strategy in the directory ........ To use it you can copy the content of the text document to a Metaquotes 5 file (.mq5) compile and then use the executable version in the Metatrader 5 application.Is recommendable that you make some testing of your own to guarantee that the strategy has some good performance given your broken data and conditions (Read Disclaimer and risk warning). 
+You can find the finished strategy in the directory src. To use it you can copy the content of the text document to a Metaquotes 5 file (.mq5) compile and then use the executable version in the Metatrader 5 application.Is recommendable that you make some testing of your own to guarantee that the strategy has some good performance given your broken data and conditions (Read Disclaimer and risk warning). 
 
 ## Contact
-Created by [@flynerdpl](https://www.flynerd.pl/) - feel free to contact me!
+Created by [@Juan-Pablo-Castro-F] - feel free to contact me!
 
 
 ## Terms of Use
